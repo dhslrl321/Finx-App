@@ -1,10 +1,11 @@
-import './App.css';
+import "./App.css";
+import GlobalContext from "./context/GlobalContext";
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <GlobalContext>
+      <div>hello</div>
+    </GlobalContext>
   );
 }
 
