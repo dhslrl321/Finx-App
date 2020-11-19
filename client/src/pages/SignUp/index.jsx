@@ -1,8 +1,26 @@
-import React, { useState } from "react";
-import { SignInContainer, Title } from "./style";
+import React, { useState, useEffect } from "react";
+import {
+  SignInContainer,
+  Title,
+  SignUpStage1,
+  SignUpStage2,
+  AuthText,
+  AuthNext,
+  StageContainer,
+} from "./style";
 import SignUpSubmitButton from "../../components/SignUpSubmitButton";
 import SignUpInputForm from "../../components/SignUpInputForm";
-const SignUp = () => {
+import AuthSubmitButton from "../../components/AuthButton";
+import queryString from "query-string";
+
+const SignUp = ({ location }) => {
+  const [stage, setStage] = useState(false);
+  const [qs, setQs] = useState({
+    code: null,
+    scope: null,
+    state: null,
+    auth: false,
+  });
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
@@ -14,16 +32,43 @@ const SignUp = () => {
       ...inputs,
       [name]: value,
     });
-    console.log("클릭됨");
   };
+
+  const toggle = () => {
+    setStage(!stage);
+  };
+
+  useEffect(() => {
+    const query = queryString.parse(location.search);
+    const { code, scope, state } = query;
+    console.log("code 값: ", code);
+
+    if (query.code !== undefined) {
+      setQs({
+        code,
+        scope,
+        state,
+        auth: true,
+      });
+    }
+  }, []);
+
   return (
     <SignInContainer>
       <Title>회원가입</Title>
-      <SignUpInputForm
-        inputs={inputs}
-        changeInputs={changeInputs}
-      ></SignUpInputForm>
-      <SignUpSubmitButton></SignUpSubmitButton>
+      <StageContainer>
+        <SignUpStage1 stage={stage}>
+          <AuthSubmitButton />
+          <AuthText>{qs.auth ? "인증 성공" : "인증을 완료해주세요!"}</AuthText>
+          <AuthNext auth={qs.auth} onClick={toggle}>
+            넘어가기
+          </AuthNext>
+        </SignUpStage1>
+        <SignUpStage2 stage={stage}>
+          <SignUpInputForm inputs={inputs} changeInputs={changeInputs} />
+          <SignUpSubmitButton />
+        </SignUpStage2>
+      </StageContainer>
     </SignInContainer>
   );
 };

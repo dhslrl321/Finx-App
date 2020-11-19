@@ -11,7 +11,7 @@ import {
 const SignInButton = () => {
   return (
     <ButtonWrapper>
-      <LoginButtonLink to="/sign-in">
+      <LoginButtonLink to="/home">
         <LoginButton>Sign In</LoginButton>
       </LoginButtonLink>
       <LinkWrapper>

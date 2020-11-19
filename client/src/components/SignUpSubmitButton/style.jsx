@@ -5,14 +5,6 @@ export const ButtonWrapper = styled.div`
   padding: 0 40px;
   margin-top: 100px;
 `;
-export const AuthButton = styled.button`
-  width: 100%;
-  height: 35px;
-  border: none;
-  border-radius: 5px;
-  background: #fafafa;
-  margin-bottom: 30px;
-`;
 export const SignUpButtonLink = styled(Link)``;
 
 export const SignUpButton = styled.button`
