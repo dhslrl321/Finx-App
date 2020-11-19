@@ -1,10 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo1 from "../../image/logo_01.png"
-import Logo2 from "../../image/logo_02.png"
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo1 from "../../images/logo_01.png";
+import Logo2 from "../../images/logo_02.png";
 import {
-  RootContainer, Text, TopLogo, TextLogo,
-  BottomContainer, BottomLogo, NextIcon
+  RootContainer,
+  Text,
+  TopLogo,
+  TextLogo,
+  BottomContainer,
+  BottomLogo,
+  NextIcon,
 } from "./style";
 
 const Entry = () => {
@@ -21,11 +26,11 @@ const Entry = () => {
         <BottomLogo src={Logo2} />
         <TextLogo>FinX</TextLogo>
       </BottomContainer>
-      <Link to="/login">
+      <Link to="/sign-in">
         <NextIcon />
       </Link>
     </RootContainer>
   );
-}
+};
 
 export default Entry;

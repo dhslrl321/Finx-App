@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export const RootContainer = styled.div`
-  background: linear-gradient( 135deg, #9CC3FA 1%, #0b03fc 99%);
+  background: linear-gradient(135deg, #9cc3fa 20%, #0b03fc 140%);
   width: 100vw;
   height: 100vh;
   display: flex;
