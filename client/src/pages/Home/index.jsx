@@ -41,18 +41,19 @@ const Home = () => {
   ]);
 
   const handleInspectOnClick = () => {
-    console.log("clicked");
+    setToggle(!toggle);
   };
+  const [toggle, setToggle] = useState(false);
 
   return (
     <HomeContainer>
       <Title>김핀스 님의 계좌 내역</Title>
 
-      <ModalContainer temp={false}>
+      <ModalContainer temp={toggle}>
         <Modal>
           <ModalText>분석중입니다...</ModalText>
           <ModalText>잠시만 기다려주세요!</ModalText>
-          <ImageWrapper>
+          <ImageWrapper onClick={handleInspectOnClick}>
             <LogoImage src={Logo} />
             <LogoText>FinX</LogoText>
           </ImageWrapper>

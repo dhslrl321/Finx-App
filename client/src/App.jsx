@@ -5,22 +5,7 @@ import Home from "./pages/Home";
 import Entry from "./pages/Entry";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import queryString from "query-string";
 import Detail from "./pages/Detail";
-
-function Test({ location, match }) {
-  const query = queryString.parse(location.search);
-  console.log(query);
-
-  return (
-    <div>
-      <div>Success</div>
-      <div>Code => {query.code}</div>
-      <div>scope => {query.scope}</div>
-      <div>state => {query.state}</div>
-    </div>
-  );
-}
 
 function App() {
   return (

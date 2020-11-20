@@ -13,3 +13,4 @@ const AuthSubmitButton = () => {
 };
 
 export default AuthSubmitButton;
+//http://127.0.0.1:3000/sign-up?code=LYPK68WQzke7LZvFs3pcI8Hk2NUFif&scope=inquiry%20login%20transfer&state=12345678901234567890123456789012
