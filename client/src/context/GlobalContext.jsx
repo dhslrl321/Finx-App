@@ -4,26 +4,30 @@ const GlobalContext = createContext();
 
 const GlobalContextProvider = ({ children }) => {
   const [test, setTest] = useState("성공!!");
-
+  const [user, setUser] = useState({
+    email: "",
+    token: "",
+    authenticated: false,
+  });
   return (
-    <GlobalContext.Provider value={{ data: { test }, fns: { setTest } }}>
+    <GlobalContext.Provider value={{ data: { user }, fns: { setUser } }}>
       {children}
     </GlobalContext.Provider>
   );
 };
 
-export const useTestData = () => {
+export const useUserData = () => {
   const {
-    data: { test },
+    data: { user },
   } = useContext(GlobalContext);
-  return test;
+  return user;
 };
 
-export const useTestFns = () => {
+export const useUserFns = () => {
   const {
-    fns: { setTest },
+    fns: { setUser },
   } = useContext(GlobalContext);
-  return setTest;
+  return setUser;
 };
 
 export default GlobalContextProvider;

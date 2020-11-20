@@ -8,6 +8,7 @@ import {
   AuthNext,
   StageContainer,
 } from "./style";
+import { userApi } from "../../apis/api";
 import SignUpSubmitButton from "../../components/SignUpSubmitButton";
 import SignUpInputForm from "../../components/SignUpInputForm";
 import AuthSubmitButton from "../../components/AuthButton";
@@ -52,6 +53,16 @@ const SignUp = ({ location }) => {
       });
     }
   }, []);
+
+  const handleSignUp = async () => {
+    const { email, password } = inputs;
+    const { code } = qs;
+    try {
+      const { data } = await userApi.postSignUp(email, password, code);
+    } catch {
+      alert("통신 실패");
+    }
+  };
 
   return (
     <SignInContainer>
