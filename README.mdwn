@@ -51,30 +51,31 @@
 
 ### 📌 사용 기술
 
-- React
+- **React / CRA**
 - - Context API
-- - Styled-Components
-- - Sass
+- - styled-Components
+- - axios
+- - Sass (Partial)
 - - React-Router-Dom
 
-- Spring Boot
+- **Spring Boot**
 - - Spring Cloud
 - - Netflix Eureka
 - - Netflix Zuul
 - - Spring Security
 - - Spring Data JPA
 
-- Infrastructure
+- **Infrastructure**
 - - RDS (Mysql)
 - - Apache Tomcat
 - - Amazon Cloud Service
 
-- Etc
-
-- Git / Github / Github Pages
-- Netflix OSS
-- Rest API
-- Javascript Object Notation
+- **Etc**
+- - Git / Github / Github Pages
+- - OAuth
+- - Netflix OSS
+- - Rest API
+- - Javascript Object Notation
 
 ![Tech](https://github.com/dhslrl321/Finx-App/blob/master/images/tech.png)
 
