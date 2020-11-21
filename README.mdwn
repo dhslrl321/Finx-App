@@ -17,12 +17,10 @@
 
 4. ### [프로젝트 소개](#-프로젝트-소개)
 
-- - 4-1 [Overview](#-overview)
+- - 4-1 [Overview](#-Overview)
 - - 4-2 [사용 기술](#-사용-기술)
 - - 4-3 [배포 구조](#-배포-구조)
 - - 4-4 [Microservice Architecture](#-Microservice-Architecture)
-- - 4-5 [DevOps](#-devops)
-- - 4-6 [Data Flow](#-data-flow)
 
 5. ### [Demo](#-Demo)
 
@@ -30,7 +28,7 @@
 
 # 👨‍👩‍👧‍👦 팀원 소개
 
-|       👨‍👨‍👧        |                                Developer 1                                |              Developer 2              |
+|       👨‍👨‍👧        |                                 Developer                                 |               Developer               |
 | :-------------: | :-----------------------------------------------------------------------: | :-----------------------------------: |
 |    **Name**     |                               🧑‍🎨 장원익                                |             🧑‍✈️ 최재웅              |
 | **Information** | [Github](https://github.com/dhslrl321), [Blog](https://wonit.tistory.com) | [Github](https://github.com/CJW-MAPU) |
@@ -46,5 +44,15 @@
 ### 📌 Context API
 
 ### 📌 AWS
+
+# ⛳️ 프로젝트 소개
+
+### 📌 Overview
+
+### 📌 사용 기술
+
+### 📌 배포 구조
+
+### 📌 Microservice Architecture
 
 # 🎥 Demo
