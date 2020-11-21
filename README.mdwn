@@ -1,4 +1,6 @@
-# Finx !
+# <center>📝 Finx ! 📝 </center>
+
+---
 
 2020 [과학기술정보통신부](https://www.msit.go.kr/web/main/main.do)에서 주관하는 2020 SW 해커톤에 참여하여 만든 Open Banking API 를 이용한 계좌 통합 조회 서비스입니다.
 
