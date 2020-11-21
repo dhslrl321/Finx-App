@@ -24,6 +24,9 @@
 
 5. ### [Demo](#-Demo)
 
+- - 5-1 [Contents List](#-Contents-List)
+- - 5-2 [User Interface Prototype](#-UI-Prototype)
+
 - 컨텐츠 목록
 
 # 👨‍👩‍👧‍👦 팀원 소개
@@ -51,6 +54,8 @@
 
 ### 📌 사용 기술
 
+![Tech](https://github.com/dhslrl321/Finx-App/blob/master/images/tech.png)
+
 - **React / CRA**
 - - Context API
 - - styled-Components
@@ -77,14 +82,43 @@
 - - Rest API
 - - Javascript Object Notation
 
-![Tech](https://github.com/dhslrl321/Finx-App/blob/master/images/tech.png)
-
 ### 📌 배포 구조
 
 ![Deploy](https://github.com/dhslrl321/Finx-App/blob/master/images/deploy.png)
 
+- **React**
+  > Static Site를 호스팅할 수 있는 Platform의 다양한 후보들이 있었다. AWS의 S3와 Cafe 24, Github Pages 등등이 있었는데, Cafe 24와 S3로 가기엔 무리가 있었다. EC2로 Backend Server를 Hosting 하기로 하였는데, 각 서버들의 크기로 인해 Freetier의 영역에서 벗어나 t2.large Instance를 사용하기로 했어서 금액적인 문제가 있기 떄문에 쉽고 간편한 Github Page에 npm의 gh-pages 모듈을 이용해서 호스팅 하였다.
+- **Spring Boot**
+  > 기본 프리티어로 제공되는 t2.micro에는 가상 CPU가 1 core이며 메모리는 1GB가 된다. 하지만 우리가 사용할 마이크로 서비스 서버가 실행될 때의 메모라 영익이 500mb 가 기본적으로 넘기 때문에 더 큰 메모리를 갖는 인스턴스가 필요했다. 그래서 선택한 것이 t2.large로 가성 CPU가 2 core에 8GB Ram을 갖기 때문에 t2.large로 결정하였다.
+- **RDS**
+  > RDS는 프리티어용 Mysql 8.0.20v의 Community Engine을 갖는 RDS를 선택했다.
+
 ### 📌 Microservice Architecture
 
-![MSA](https://github.com/dhslrl321/Finx-App/blob/master/images/msa.png)
+![MSA](https://github.com/dhslrl321/Finx-App/blob/master/images/Msa.png)
+
+- **MSA**
+- - 인증 서버
+    > **Auth Server** 에서는 사용자가 최초 로그인을 하게되면 **Openbanking** 에서 제공되는 인증 페이지로 넘어간 뒤, 인증이 끝나고 받은 `code` 값을 토대로 `Access Token` 과 `Refresh Token`을 발급 받는다.
+- - 사용자 서버
+    > **User Server** 에서 사용자 관련 리소스의 처리를 수행한다.
+- - 뱅킹 서버
+    > **Banking Server** 에서는 사용자 DB에 저장된 `Access Token`과 `Refresh Token`을 토대로 Open Banking API로 요청을 보내게 되고 요청한 결과에 따라 Banking Server에서 지정된 로직을 수행하게 된다.
 
 # 🎥 Demo
+
+### 📌 Contents List
+
+1. 로그인
+2. 로그아웃
+3. 회원가입
+4. 계좌목록 조회
+5. 계좌 잔액 조회 (총 잔액)
+6. 사용가능한 잔액 조회 (고정 지출을 제외한 잔액)
+7. 입/출금 내역 조회
+8. 고정 지출 목록 조회
+9. 고정 지출 등록
+10. 고정 지출 삭제
+11. 고정 지출 분석
+
+### 📌 UI Prototype
