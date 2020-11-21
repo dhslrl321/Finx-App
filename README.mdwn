@@ -21,10 +21,9 @@
 
 4. ### [프로젝트 소개](#-프로젝트-소개)
 
-- - 4-1 [Overview](#-Overview)
-- - 4-2 [사용 기술](#-사용-기술)
-- - 4-3 [배포 구조](#-배포-구조)
-- - 4-4 [Microservice Architecture](#-Microservice-Architecture)
+- - 4-1 [사용 기술](#-사용-기술)
+- - 4-2 [배포 구조](#-배포-구조)
+- - 4-3 [Microservice Architecture](#-Microservice-Architecture)
 
 5. ### [Demo](#-Demo)
 
@@ -86,8 +85,6 @@ AWS를 선정한 **구체적인 이유**가 있는데, 다음과 같습니다.
 결국 AWS의 EC2를 사용하게 되었습니다.
 
 # ⛳️ 프로젝트 소개
-
-### 📌 Overview
 
 ### 📌 사용 기술
 
