@@ -95,7 +95,7 @@
 
 ### 📌 Microservice Architecture
 
-![MSA](https://github.com/dhslrl321/Finx-App/blob/master/images/Msa.png)
+![MSA](https://github.com/dhslrl321/Finx-App/blob/master/images/msa.png)
 
 - **MSA**
 - - 인증 서버
@@ -122,3 +122,5 @@
 11. 고정 지출 분석
 
 ### 📌 UI Prototype
+
+![UI](https://github.com/dhslrl321/Finx-App/blob/master/images/ui.png)
