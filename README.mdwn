@@ -55,6 +55,10 @@
 
 ### 📌 배포 구조
 
+![Deploy](https://github.com/dhslrl321/Finx-App/blob/master/images/deploy.png)
+
 ### 📌 Microservice Architecture
+
+![MSA](https://github.com/dhslrl321/Finx-App/blob/master/images/msa.png)
 
 # 🎥 Demo
