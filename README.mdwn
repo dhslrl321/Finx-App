@@ -6,6 +6,7 @@
 2. ### [기획 배경 및 필요셩](#-기획-배경-및-필요성)
 
 - 기회 의도
+- 서비스 목적
 
 3. ### [What is Challenging](#-What-is-Challenging)
 
@@ -19,7 +20,7 @@
 - - 4-1 [Overview](#-overview)
 - - 4-2 [사용 기술](#-사용-기술)
 - - 4-3 [배포 구조](#-배포-구조)
-- - 4-4 [Microservice Architecture](#-microservice-architecture)
+- - 4-4 [Microservice Architecture](#-Microservice-Architecture)
 - - 4-5 [DevOps](#-devops)
 - - 4-6 [Data Flow](#-data-flow)
 
@@ -38,12 +39,12 @@
 
 # 👩🏻‍💻 What is Challenging
 
-### 페어 프로그래밍
+### 📌 페어 프로그래밍
 
-### Microservice
+### 📌 마이크로 서비스 아키텍쳐
 
-### Context API
+### 📌 Context API
 
-### AWS
+### 📌 AWS
 
 # 🎥 Demo
