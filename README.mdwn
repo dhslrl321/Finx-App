@@ -51,6 +51,8 @@
 
 ### 📌 사용 기술
 
+![Tech](https://github.com/dhslrl321/Finx-App/blob/master/images/tech.png)
+
 ### 📌 배포 구조
 
 ### 📌 Microservice Architecture
