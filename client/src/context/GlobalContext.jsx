@@ -3,10 +3,10 @@ import React, { useContext, createContext, useState } from "react";
 const GlobalContext = createContext();
 
 const GlobalContextProvider = ({ children }) => {
-  const [test, setTest] = useState("성공!!");
   const [user, setUser] = useState({
     email: "",
     token: "",
+    userAccount: "",
     authenticated: false,
   });
   return (
